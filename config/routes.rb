@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # Users
   get '/signup', to: 'users#new'
-  get '/signup', to: 'users#create'
+  post '/signup', to: 'users#create'
 
   resources :users
 end

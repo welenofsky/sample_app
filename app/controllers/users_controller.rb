@@ -19,6 +19,10 @@ class UsersController < ApplicationController
 		end
 	end
 
+	def edit
+		@user = User.find(params[:id])
+	end
+
 	private
 		# Visual indent is a convention to help visually show which methods are private
 		def user_params

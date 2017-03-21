@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
 
   resources :users
+  resources :account_activation, only: [:edit]
 end
